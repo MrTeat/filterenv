@@ -18,12 +18,12 @@ export OUT_DIR
 download_url() {
     url="$1"
     # Lewati baris kosong atau komentar
-    [[ -z ""+"${url// }" ]] && exit 0
+    [[ -z ""+"{url// }" ]] && exit 0
     [[ "$url" =~ ^# ]] && exit 0
 
     # Ekstrak domain dari URL menggunakan awk
-domain=$(echo "$url" | awk -F/ '{print $3}')
-base=$(basename "${url%%\?*}")
+    domain=$(echo "$url" | awk -F/ '{print $3}')
+    base=$(basename "${url%%\?*}")
 
     # Smart Naming: kalau namanya .env, ubah jadi domain.env
     if [[ "$base" == ".env" || -z "$base" ]]; then
