@@ -1,0 +1,4 @@
+# Daftar URL untuk di-download (contoh)
+https://raw.githubusercontent.com/MrTeat/filterenv/main/README.md
+# https://example.com/.env
+# https://test.com/config.txt
